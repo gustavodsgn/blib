@@ -1,0 +1,328 @@
+/* Global ================== */
+:root {
+  --purple-bg-hero: #160144;
+  --blue: #2b52de;
+  --light-blue: #3a65fe;
+  --white: #ffff;
+}
+
+/* Body ================== */
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--purple-bg-hero);
+  font-family: "Varela Round", sans-serif;
+}
+
+img,
+svg {
+  display: block;
+}
+
+.main-container {
+  width: min(90vw, 1440px);
+  margin: auto;
+}
+
+/* Titles e Paragraphs ================== */
+
+h1 {
+  font-weight: bold;
+  font-size: 65px;
+  color: var(--white);
+  display: inline-block;
+  position: relative;
+}
+
+.title-hero {
+  margin-bottom: 0;
+  padding: auto;
+}
+
+p {
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+/* Buttons ================== */
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: var(--blue);
+  display: inline-block;
+  position: absolute;
+  width: 11rem;
+  height: 4.5rem;
+
+  border: none;
+
+  padding: 0;
+  border-radius: 1.2rem;
+  text-align: center;
+
+  cursor: pointer;
+
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: var(--light-blue);
+}
+
+.btn-bora {
+  color: var(--white);
+  font-size: 35px;
+  font-weight: bold;
+
+  display: inline-block;
+
+  padding: 0;
+
+  margin-top: 1rem;
+}
+
+/* Header ================== */
+
+header {
+  width: 100%;
+  position: relative;
+  z-index: 800;
+  margin-top: 1.2rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
+  justify-content: space-between;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+
+  align-items: center;
+
+  margin-left: 2.5rem;
+}
+
+.logo-hero {
+  height: 25%;
+}
+
+.nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-list {
+  margin-right: 5rem;
+}
+
+.nav-link.play {
+  width: 225%;
+  height: 20px;
+
+  border: none;
+
+  color: var(--white);
+  background: var(--blue);
+
+  border-radius: 0.8rem;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.nav-link.play:hover {
+  background: var(--light-blue);
+}
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 8px 16px;
+  color: var(--white);
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3.125rem;
+  left: 50%;
+  margin-top: 0.5rem;
+  width: 0.13rem;
+  height: 0px;
+  border-radius: 0.13rem;
+  -webkit-transform: translate3d(-15%, 0, 0);
+  transform: translate3d(-15%, 0, 0);
+}
+
+.nav-link.contact:hover {
+  opacity: 0.7;
+}
+
+.nav-link:hover::after {
+  height: 3rem;
+}
+
+/* Main ================== */
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  display: flex;
+}
+
+.container-item-1 {
+  max-width: 650px;
+
+  margin: 0rem;
+}
+
+.container-item-2 {
+  max-width: 720px;
+
+  margin-top: -0.2rem;
+}
+
+/* Responsivo ================== */
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  .container-item-1 {
+    margin-left: 1rem;
+  }
+
+  .content-img {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .container-item-1 {
+    margin-left: 1rem;
+  }
+
+  .content-img {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  h1 {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-item-1 {
+    margin-left: 1rem;
+  }
+
+  .content-img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content-img {
+    display: none;
+  }
+
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .main-container {
+    justify-content: center;
+
+    margin-left: 0%;
+  }
+
+  .btn {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .navbar {
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width: 560px) {
+    h1 {
+      font-size: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar,
+    .logo-hero {
+      display: flex;
+      justify-content: center;
+      height: 35px;
+      margin-right: 2rem;
+      margin-top: 0.8rem;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 0px;
+    }
+
+    .btn {
+      display: inline-block;
+      position: absolute;
+      width: 9rem;
+      height: 10%;
+
+      border: none;
+
+      padding: 0;
+      border-radius: 0.8rem;
+      text-align: center;
+    }
+
+    .btn-bora {
+      font-size: 25px;
+    }
+  }
+}
