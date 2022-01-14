@@ -81,6 +81,11 @@ a {
   background: var(--light-blue);
 }
 
+.emoji {
+  font-size: 25px;
+  font-weight: normal;
+}
+
 /* Header ================== */
 
 header {
