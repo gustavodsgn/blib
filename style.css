@@ -382,7 +382,7 @@ input {
 }
 
 .input-group {
-  margin-top: 00.8rem;
+  margin-top: 1.2rem;
 }
 
 .input-group .help {
@@ -423,33 +423,51 @@ footer {
 
 @media screen and (max-width: 800px) {
   .emojionearea.emojionearea-inline {
-    width: 35rem;
+    width: 34.7rem;
   }
 }
 
 @media screen and (max-width: 590px) {
   .emojionearea.emojionearea-inline {
-    width: 112%;
+    width: 107%;
   }
   .modal {
-    max-width: 50%;
+    max-width: 75%;
+    max-height: 75%;
   }
-}
 
-@media screen and (max-width: 590px) {
   button {
+    width: 50%;
+    height: 40px;
     border-radius: 0.7rem;
-  }
-}
 
-@media screen and (max-width: 590px) {
+    font-size: 12px;
+  }
+
   .button.cancel {
+    width: 50%;
+    height: 40px;
     border-radius: 0.7rem;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .logo-page {
     height: 35px;
+  }
+
+  small {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .emojionearea.emojionearea-inline {
+    width: 109%;
+  }
+
+  small {
+    font-size: 10px;
   }
 }

@@ -281,6 +281,10 @@ header {
   }
 
   @media screen and (max-width: 560px) {
+    .container-item-1 {
+      margin-left: 1.5rem;
+    }
+
     h1 {
       font-size: 35px;
       display: flex;
@@ -311,7 +315,7 @@ header {
     .btn {
       display: inline-block;
       position: absolute;
-      width: 9rem;
+      width: 28rem;
       height: 10%;
 
       border: none;
@@ -324,5 +328,47 @@ header {
     .btn-bora {
       font-size: 25px;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    width: 23.5rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .btn {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .btn {
+    width: 19.9rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .btn {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn {
+    width: 15.5rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .btn {
+    width: 13rem;
   }
 }
